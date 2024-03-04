@@ -1,0 +1,691 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <script src="https://unpkg.com/akar-icons-fonts"></script>
+    <title>Hanado</title>
+  </head>
+  <body class="bg-back overflow-x-hidden">
+    <nav
+      class="absolute px-6 py-2 text-lg top-0 left-0 w-screen h-20 flex flex-row justify-between items-center z-10"
+    >
+      <img class="h-12" src="./Assets/Images/logo.png" alt="Logo" />
+      <ul class="flex flex-row justify-center gap-8">
+        <li><a class="text-orange-500" href="#">About us</a></li>
+        <li><a href="#">Our Products</a></li>
+        <li><a href="#">Delivery</a></li>
+      </ul>
+      <form class="flex flex-row gap-4 mr-4">
+        <div
+          class="bg-white px-6 py-2 shadow-lg rounded-full text-sm flex flex-row items-center justify-between gap-3"
+        >
+          <i class="ai-search text-base"></i>
+          <input
+            type="search"
+            class="focus:outline-none"
+            placeholder="search..."
+          />
+        </div>
+        <button type="button" class="relative">
+          <i class="ai-cart text-xl"></i>
+          <div
+            class="bg-red-500 w-2 h-2 rounded-full absolute top-2 right-0 animate-pulse"
+          ></div>
+        </button>
+      </form>
+    </nav>
+    <main class="px-[5vw]">
+      <img
+        class="absolute top-0 right-0 w-[400px]"
+        src="./Assets/Images/bg-hero.png"
+        alt="Coffee Beans"
+      />
+      <img
+        class="absolute top-[100vh] left-0 w-[450px] -translate-y-[60%] -z-10"
+        src="./Assets/Images/bg-hero-2.png"
+        alt="Coffee Beans"
+      />
+      <section class="flex justify-between items-center h-[90vh]">
+        <div class="w-96">
+          <h2 class="text-4xl font-bold mb-5 leading-snug text-coffee">
+            Enjoy your <span class="text-orange-500">coffe</span> before your
+            activity
+          </h2>
+          <p class="text-coffee mb-5">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione
+            quisquam atque excepturi distinctio delectus.
+          </p>
+
+          <div class="flex items-center gap-4">
+            <button
+              class="bg-coffee text-white px-8 py-4 rounded-full flex items-center gap-1.5"
+            >
+              <span class="flex-1">Order now</span>
+              <span
+                class="w-7 h-7 bg-orange-500 rounded-full grid place-items-center text-sm"
+              >
+                <i class="ai-cart"></i>
+              </span>
+            </button>
+
+            <button
+              class="px-8 py-2 hover:text-orange-500 duration-300 transition-all"
+            >
+              More menu
+            </button>
+          </div>
+        </div>
+
+        <div class="relative">
+          <div
+            class="w-96 h-96 relative bg-coffee rounded-full flex justify-center items-center"
+          >
+            <img
+              class="absolute w-92 h-92"
+              src="./Assets/Icons/transparent-coffe.svg"
+              alt="Coffee shadow"
+            />
+            <img
+              class="w-72 h-auto"
+              src="./Assets/Images/coffe-glass.png"
+              alt="Coffee"
+            />
+          </div>
+
+          <div
+            class="bg-white/40 w-max p-1.5 rounded-full absolute top-6 -left-8 backdrop-blur-sm duration-300 transition-all hover:-translate-y-5"
+          >
+            <p
+              class="bg-white px-8 py-4 w-max rounded-full text-xl font-semibold"
+            >
+              Cappuccino
+            </p>
+          </div>
+          <div
+            class="bg-white/40 w-max p-1.5 rounded-full absolute bottom-2 left-8 backdrop-blur-sm duration-300 transition-all hover:-translate-y-5"
+          >
+            <p
+              class="bg-white px-8 py-4 w-max rounded-full text-xl font-semibold"
+            >
+              18K
+            </p>
+          </div>
+          <div
+            class="bg-white/40 w-max p-1.5 rounded-full absolute top-24 -right-4 backdrop-blur-sm duration-300 transition-all hover:-translate-y-5"
+          >
+            <p
+              class="bg-white px-6 py-3 w-max rounded-full text-xl font-semibold flex items-center gap-1"
+            >
+              4.8 <img src="./Assets/Icons/gold-star.svg" alt="Star" />
+            </p>
+          </div>
+        </div>
+      </section>
+      <section class="h-screen relative -mt-10 z-50">
+        <h1 class="font-bold text-4xl">
+          Popular <span class="underline decoration-orange-500">Now</span>
+        </h1>
+        <div
+          class="mt-52 z-10 flex flex-row justify-around items-start bg-back-dark w-full h-[35vh] rounded-3xl shadow-lg"
+        >
+          <div
+            class="p-2 -mt-40 bg-white/30 backdrop-blur-md rounded-xl w-1/4 shadow-lg hover:-translate-y-6 hover:shadow-2xl transition-all duration-500"
+          >
+            <div
+              class="group bg-white p-4 w-full h-full rounded-lg flex flex-col gap-5"
+            >
+              <div class="w-full overflow-hidden rounded-lg relative">
+                <img
+                  class="rounded-lg group-hover:scale-125 transition-all duration-300"
+                  src="./Assets/Images/product-1.png"
+                  alt="Product 1"
+                />
+                <div
+                  class="bg-white/40 w-max p-1 rounded-full absolute top-2 left-2 backdrop-blur-sm duration-300 transition-all group-hover:rotate-[360deg]"
+                >
+                  <p
+                    class="bg-white px-2 py-1 w-max rounded-full text-base font-semibold flex items-center gap-1"
+                  >
+                    4.8
+                    <img
+                      class="w-[12px]"
+                      src="./Assets/Icons/gold-star.svg"
+                      alt="Star"
+                    />
+                  </p>
+                </div>
+              </div>
+              <div class="font-bold text-2xl flex flex-row justify-between">
+                <h1>Vanilla Latte</h1>
+                <h2>21 K</h2>
+              </div>
+              <div class="flex flex-row justify-between items-center w-full">
+                <div class="flex flex-row items-center gap-4">
+                  <div
+                    class="py-1 px-4 text-orange-500 border-2 border-orange-500 rounded-md"
+                  >
+                    Hot
+                  </div>
+                  <div
+                    class="py-1 px-4 text-orange-500/60 border-2 border-orange-500/60 rounded-md"
+                  >
+                    Cold
+                  </div>
+                </div>
+                <div
+                  class="w-10 h-10 bg-orange-500 rounded-full grid place-items-center text-lg"
+                >
+                  <i
+                    class="ai-cart text-white hover:rotate-[360deg] duration-300"
+                  ></i>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="p-2 -mt-40 bg-white/30 backdrop-blur-md rounded-xl w-1/4 shadow-lg hover:-translate-y-6 hover:shadow-2xl transition-all duration-500"
+          >
+            <div
+              class="group bg-white p-4 w-full h-full rounded-lg flex flex-col gap-5"
+            >
+              <div class="w-full overflow-hidden rounded-lg relative">
+                <img
+                  class="rounded-lg group-hover:scale-125 transition-all duration-300"
+                  src="./Assets/Images/product-2.png"
+                  alt="Product 2"
+                />
+                <div
+                  class="bg-white/40 w-max p-1 rounded-full absolute top-2 left-2 backdrop-blur-sm duration-300 transition-all group-hover:rotate-[360deg]"
+                >
+                  <p
+                    class="bg-white px-2 py-1 w-max rounded-full text-base font-semibold flex items-center gap-1"
+                  >
+                    4.8
+                    <img
+                      class="w-[12px]"
+                      src="./Assets/Icons/gold-star.svg"
+                      alt="Star"
+                    />
+                  </p>
+                </div>
+              </div>
+              <div class="font-bold text-2xl flex flex-row justify-between">
+                <h1>Espresso</h1>
+                <h2>12 K</h2>
+              </div>
+              <div class="flex flex-row justify-between items-center w-full">
+                <div class="flex flex-row items-center gap-4">
+                  <div
+                    class="py-1 px-4 text-orange-500/60 border-2 border-orange-500/60 rounded-md"
+                  >
+                    Hot
+                  </div>
+                  <div
+                    class="py-1 px-4 text-orange-500/60 border-2 border-orange-500/60 rounded-md"
+                  >
+                    Cold
+                  </div>
+                </div>
+                <div
+                  class="w-10 h-10 bg-orange-500 rounded-full grid place-items-center text-lg"
+                >
+                  <i
+                    class="ai-cart text-white hover:rotate-[360deg] duration-300"
+                  ></i>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="p-2 -mt-40 bg-white/30 backdrop-blur-md rounded-xl w-1/4 shadow-lg hover:-translate-y-6 hover:shadow-2xl transition-all duration-500"
+          >
+            <div
+              class="group bg-white p-4 w-full h-full rounded-lg flex flex-col gap-5"
+            >
+              <div class="w-full overflow-hidden rounded-lg relative">
+                <img
+                  class="rounded-lg group-hover:scale-125 transition-all duration-300"
+                  src="./Assets/Images/product-3.png"
+                  alt="Product 3"
+                />
+                <div
+                  class="bg-white/40 w-max p-1 rounded-full absolute top-2 left-2 backdrop-blur-sm duration-300 transition-all group-hover:rotate-[360deg]"
+                >
+                  <p
+                    class="bg-white px-2 py-1 w-max rounded-full text-base font-semibold flex items-center gap-1"
+                  >
+                    4.8
+                    <img
+                      class="w-[12px]"
+                      src="./Assets/Icons/gold-star.svg"
+                      alt="Star"
+                    />
+                  </p>
+                </div>
+              </div>
+              <div class="font-bold text-2xl flex flex-row justify-between">
+                <h1>Hazelnut Latte</h1>
+                <h2>23 K</h2>
+              </div>
+              <div class="flex flex-row justify-between items-center w-full">
+                <div class="flex flex-row items-center gap-4">
+                  <div
+                    class="py-1 px-4 text-orange-500/60 border-2 border-orange-500/60 rounded-md"
+                  >
+                    Hot
+                  </div>
+                  <div
+                    class="py-1 px-4 text-orange-500/60 border-2 border-orange-500/60 rounded-md"
+                  >
+                    Cold
+                  </div>
+                </div>
+                <div
+                  class="w-10 h-10 bg-orange-500 rounded-full grid place-items-center text-lg"
+                >
+                  <i
+                    class="ai-cart text-white hover:rotate-[360deg] duration-300"
+                  ></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <section class="w-[100vw] px-[7vw] pt-72 pb-72 bg-white -mt-80">
+      <h1 class="font-bold text-4xl mb-10">
+        How to use delivery
+        <span class="underline decoration-orange-500">service</span>
+      </h1>
+      <div class="flex flex-row justify-around items-center">
+        <div class="flex flex-col items-center gap-4 text-2xl">
+          <img
+            class="w-40"
+            src="./Assets/Images/service-1.png"
+            alt="Service 1"
+          />
+          <h1 class="font-bold">choose your coffee</h1>
+          <p>there are 20+ coffee for you</p>
+        </div>
+        <div class="flex flex-col items-center gap-4 text-2xl">
+          <img
+            class="w-40"
+            src="./Assets/Images/service-2.png"
+            alt="Service 2"
+          />
+          <h1 class="font-bold">we delivery it to you</h1>
+          <p>Choose delivery service</p>
+        </div>
+        <div class="flex flex-col items-center gap-4 text-2xl">
+          <img
+            class="w-40"
+            src="./Assets/Images/service-3.png"
+            alt="Service 3"
+          />
+          <h1 class="font-bold">Enjoy your coffee</h1>
+          <p>Choose delivery service</p>
+        </div>
+      </div>
+    </section>
+    <section class="relative py-10 flex flex-row justify-center items-center">
+      <img
+        class="absolute w-[110vw] opacity-20 top-4"
+        src="./Assets/Images/bg-aboutus.png"
+        alt="bg about us"
+      />
+      <div class="w-1/3 pr-20 flex flex-row justify-end">
+        <div
+          class="p-2 -mt-40 h-[70vh] bg-white/30 backdrop-blur-md rounded-3xl shadow-lg"
+        >
+          <img
+            class="h-full"
+            src="./Assets/Images/highlight-product.png"
+            alt="coffee"
+          />
+        </div>
+      </div>
+      <div class="flex flex-col items-start gap-6 w-1/3">
+        <h1 class="font-bold text-4xl">
+          About
+          <span class="underline decoration-orange-500">us</span>
+        </h1>
+        <h2 class="text-3xl font-bold">
+          We provide quality coffee,<br />and ready to deliver.
+        </h2>
+        <p class="text-xl text-gray-500">
+          We are the company that makes and distributes delicious drinks. our
+          main product is made with a secret recipe and avaible in stores
+          worldwide.
+        </p>
+        <button class="py-2 px-6 bg-coffee text-orange-500 rounded-full">
+          Get Your Coffee
+        </button>
+      </div>
+    </section>
+    <section class="px-[5vw] mt-20 py-40 bg-white">
+      <h1 class="font-bold text-4xl mb-10">
+        Special menu
+        <span class="underline decoration-orange-500">for you</span>
+      </h1>
+      <div class="grid grid-cols-3 gap-10 p-[5vw]">
+        <div class="p-2 bg-white/30 backdrop-blur-md rounded-xl shadow-lg">
+          <div
+            class="group bg-white p-4 w-full h-full rounded-lg flex flex-col gap-5"
+          >
+            <div class="w-full overflow-hidden rounded-lg relative">
+              <img
+                class="rounded-lg group-hover:scale-125 transition-all duration-300"
+                src="./Assets/Images/product-4.png"
+                alt="Product 4"
+              />
+              <div
+                class="bg-white/40 w-max p-1 rounded-full absolute top-2 left-2 backdrop-blur-sm duration-300 transition-all group-hover:rotate-[360deg]"
+              >
+                <p
+                  class="bg-white px-2 py-1 w-max rounded-full text-base font-semibold flex items-center gap-1"
+                >
+                  4.8
+                  <img
+                    class="w-[12px]"
+                    src="./Assets/Icons/gold-star.svg"
+                    alt="Star"
+                  />
+                </p>
+              </div>
+            </div>
+            <div class="font-bold text-2xl flex flex-row justify-between">
+              <h1>Sandwich</h1>
+              <h2>12 K</h2>
+            </div>
+            <div class="flex flex-row justify-between items-center w-full">
+              <div class="text-sm text-gray-400 w-2/3">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint,
+                fugiat?
+              </div>
+              <div
+                class="w-10 h-10 bg-orange-500 rounded-full grid place-items-center text-lg"
+              >
+                <i
+                  class="ai-cart text-white hover:rotate-[360deg] duration-300"
+                ></i>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="p-2 bg-white/30 backdrop-blur-md rounded-xl shadow-lg">
+          <div
+            class="group bg-white p-4 w-full h-full rounded-lg flex flex-col gap-5"
+          >
+            <div class="w-full overflow-hidden rounded-lg relative">
+              <img
+                class="rounded-lg group-hover:scale-125 transition-all duration-300"
+                src="./Assets/Images/product-5.png"
+                alt="Product 5"
+              />
+              <div
+                class="bg-white/40 w-max p-1 rounded-full absolute top-2 left-2 backdrop-blur-sm duration-300 transition-all group-hover:rotate-[360deg]"
+              >
+                <p
+                  class="bg-white px-2 py-1 w-max rounded-full text-base font-semibold flex items-center gap-1"
+                >
+                  4.8
+                  <img
+                    class="w-[12px]"
+                    src="./Assets/Icons/gold-star.svg"
+                    alt="Star"
+                  />
+                </p>
+              </div>
+            </div>
+            <div class="font-bold text-2xl flex flex-row justify-between">
+              <h1>Hot Milk</h1>
+              <h2>12 K</h2>
+            </div>
+            <div class="flex flex-row justify-between items-center w-full">
+              <div class="text-sm text-gray-400 w-2/3">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint,
+                fugiat?
+              </div>
+              <div
+                class="w-10 h-10 bg-orange-500 rounded-full grid place-items-center text-lg"
+              >
+                <i
+                  class="ai-cart text-white hover:rotate-[360deg] duration-300"
+                ></i>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="p-2 bg-white/30 backdrop-blur-md rounded-xl shadow-lg">
+          <div
+            class="group bg-white p-4 w-full h-full rounded-lg flex flex-col gap-5"
+          >
+            <div class="w-full overflow-hidden rounded-lg relative">
+              <img
+                class="rounded-lg group-hover:scale-125 transition-all duration-300"
+                src="./Assets/Images/product-6.png"
+                alt="Product 6"
+              />
+              <div
+                class="bg-white/40 w-max p-1 rounded-full absolute top-2 left-2 backdrop-blur-sm duration-300 transition-all group-hover:rotate-[360deg]"
+              >
+                <p
+                  class="bg-white px-2 py-1 w-max rounded-full text-base font-semibold flex items-center gap-1"
+                >
+                  4.8
+                  <img
+                    class="w-[12px]"
+                    src="./Assets/Icons/gold-star.svg"
+                    alt="Star"
+                  />
+                </p>
+              </div>
+            </div>
+            <div class="font-bold text-2xl flex flex-row justify-between">
+              <h1>Coffee Ice Cream</h1>
+              <h2>12 K</h2>
+            </div>
+            <div class="flex flex-row justify-between items-center w-full">
+              <div class="text-sm text-gray-400 w-2/3">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint,
+                fugiat?
+              </div>
+              <div
+                class="w-10 h-10 bg-orange-500 rounded-full grid place-items-center text-lg"
+              >
+                <i
+                  class="ai-cart text-white hover:rotate-[360deg] duration-300"
+                ></i>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="p-2 bg-white/30 backdrop-blur-md rounded-xl shadow-lg">
+          <div
+            class="group bg-white p-4 w-full h-full rounded-lg flex flex-col gap-5"
+          >
+            <div class="w-full overflow-hidden rounded-lg relative">
+              <img
+                class="rounded-lg group-hover:scale-125 transition-all duration-300"
+                src="./Assets/Images/product-7.png"
+                alt="Product 7"
+              />
+              <div
+                class="bg-white/40 w-max p-1 rounded-full absolute top-2 left-2 backdrop-blur-sm duration-300 transition-all group-hover:rotate-[360deg]"
+              >
+                <p
+                  class="bg-white px-2 py-1 w-max rounded-full text-base font-semibold flex items-center gap-1"
+                >
+                  4.8
+                  <img
+                    class="w-[12px]"
+                    src="./Assets/Icons/gold-star.svg"
+                    alt="Star"
+                  />
+                </p>
+              </div>
+            </div>
+            <div class="font-bold text-2xl flex flex-row justify-between">
+              <h1>Cappuccino</h1>
+              <h2>12 K</h2>
+            </div>
+            <div class="flex flex-row justify-between items-center w-full">
+              <div class="text-sm text-gray-400 w-2/3">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint,
+                fugiat?
+              </div>
+              <div
+                class="w-10 h-10 bg-orange-500 rounded-full grid place-items-center text-lg"
+              >
+                <i
+                  class="ai-cart text-white hover:rotate-[360deg] duration-300"
+                ></i>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="p-2 bg-white/30 backdrop-blur-md rounded-xl shadow-lg">
+          <div
+            class="group bg-white p-4 w-full h-full rounded-lg flex flex-col gap-5"
+          >
+            <div class="w-full overflow-hidden rounded-lg relative">
+              <img
+                class="rounded-lg group-hover:scale-125 transition-all duration-300"
+                src="./Assets/Images/product-8.png"
+                alt="Product 8"
+              />
+              <div
+                class="bg-white/40 w-max p-1 rounded-full absolute top-2 left-2 backdrop-blur-sm duration-300 transition-all group-hover:rotate-[360deg]"
+              >
+                <p
+                  class="bg-white px-2 py-1 w-max rounded-full text-base font-semibold flex items-center gap-1"
+                >
+                  4.8
+                  <img
+                    class="w-[12px]"
+                    src="./Assets/Icons/gold-star.svg"
+                    alt="Star"
+                  />
+                </p>
+              </div>
+            </div>
+            <div class="font-bold text-2xl flex flex-row justify-between">
+              <h1>Moccachinno</h1>
+              <h2>12 K</h2>
+            </div>
+            <div class="flex flex-row justify-between items-center w-full">
+              <div class="text-sm text-gray-400 w-2/3">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint,
+                fugiat?
+              </div>
+              <div
+                class="w-10 h-10 bg-orange-500 rounded-full grid place-items-center text-lg"
+              >
+                <i
+                  class="ai-cart text-white hover:rotate-[360deg] duration-300"
+                ></i>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="p-2 bg-white/30 backdrop-blur-md rounded-xl shadow-lg">
+          <div
+            class="group bg-white p-4 w-full h-full rounded-lg flex flex-col gap-5"
+          >
+            <div class="w-full overflow-hidden rounded-lg relative">
+              <img
+                class="rounded-lg group-hover:scale-125 transition-all duration-300"
+                src="./Assets/Images/product-9.png"
+                alt="Product 9"
+              />
+              <div
+                class="bg-white/40 w-max p-1 rounded-full absolute top-2 left-2 backdrop-blur-sm duration-300 transition-all group-hover:rotate-[360deg]"
+              >
+                <p
+                  class="bg-white px-2 py-1 w-max rounded-full text-base font-semibold flex items-center gap-1"
+                >
+                  4.8
+                  <img
+                    class="w-[12px]"
+                    src="./Assets/Icons/gold-star.svg"
+                    alt="Star"
+                  />
+                </p>
+              </div>
+            </div>
+            <div class="font-bold text-2xl flex flex-row justify-between">
+              <h1>Waffle Ice Cream</h1>
+              <h2>12 K</h2>
+            </div>
+            <div class="flex flex-row justify-between items-center w-full">
+              <div class="text-sm text-gray-400 w-2/3">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint,
+                fugiat?
+              </div>
+              <div
+                class="w-10 h-10 bg-orange-500 rounded-full grid place-items-center text-lg"
+              >
+                <i
+                  class="ai-cart text-white hover:rotate-[360deg] duration-300"
+                ></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="relative bg-white px-[5vw] py-20">
+      <div class="absolute bg-back/80 w-full -ml-[40vw] rounded-[50px] h-[80vh]">
+        <img class="opacity-20" src="./Assets/Images/bg-aboutus.png" alt="coffees shadow" /> 
+      </div>
+      <div class="relative z-50 h-[80vh] flex flex-row justify-between w-screen ml-20 gap-40">
+        <div class="flex flex-col justify-center gap-10 w-[50vw]">
+          <h1 class="font-bold text-3xl text-left text-coffee w-full text-nowrap">What they say about us</h1>
+          <p class="text-md text-gray-400 text-left">we always provide the best service<br>and always maintain the quality of<br>coffee</p>
+        </div>
+        <div class="grid grid-cols-4 place-items-center gap-20">
+          <div class="relative">
+           <img src="./Assets/Images/testimonial-1.png" alt="Testimonial 1">
+            <div class="absolute bottom-[10%] -right-16 bg-back-dark/50 p-1.5 rounded-lg backdrop-blur-md">
+              <div class="py-3 px-6 rounded-md bg-back-dark text-sm">
+                <h1 class="font-bold">Naura</h1>
+                <p>I really love the cappuccino,<br/> the coffee was very smooth</p>
+              </div> 
+            </div>
+          </div>
+          <div class="relative">
+           <img src="./Assets/Images/testimonial-2.png" alt="Testimonial 1">
+            <div class="absolute bottom-[10%] -right-16 bg-back-dark/50 p-1.5 rounded-lg backdrop-blur-md">
+              <div class="py-3 px-6 rounded-md bg-back-dark text-sm">
+                <h1 class="font-bold">Jhone</h1>
+                <p>this coffee shop is very<br/>convenient</p>
+              </div> 
+            </div>
+          </div>
+          <div class="relative">
+           <img src="./Assets/Images/testimonial-3.png" alt="Testimonial 1">
+            <div class="absolute bottom-[10%] -right-16 bg-back-dark/50 p-1.5 rounded-lg backdrop-blur-md">
+              <div class="py-3 px-6 rounded-md bg-back-dark text-sm">
+                <h1 class="font-bold">Azura</h1>
+                <p>the coffee menu here is<br/>very much</p>
+              </div> 
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="h-[80vh] bg-white p-20 pb-10 flex flex-row justify-center">
+      <img src="Assets/Images/bg-newsletter.png" alt="newletter" class="w-[80vw] object-cover rounded-3xl absolute">
+      <div class="flex flex-col items-center h-1/2 justify-center gap-10 absolute z-10">
+        <h1 class="text-white font-bold text-4xl">Subscribe to get 50% discount price</h1>
+        <form class="bg-white p-2 rounded-full">
+          <input class="bg-transparent mx-4 border-0 placeholder:font-bold focus:outline-0" type="email" placeholder="email address" />
+          <button class="bg-coffee py-2 px-6 rounded-full text-white">Order now</button>
+        </form>
+      </div>
+    </section>
+  </body>
+</html>
